@@ -1,0 +1,12 @@
+.home {
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    width: clamp(300px, 100%, 500px);
+    form {
+        display: flex;
+        justify-content: space-between;
+    }
+}

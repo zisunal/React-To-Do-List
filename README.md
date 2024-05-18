@@ -1,11 +1,15 @@
 # Getting Started
 
 1. Clone this repository
-2. Run `npm install` ton Install all the dependencies
+2. Run `npm install` to Install all the dependencies
 3. If you want to change Light, Dark, White, Black color, or Shadows, go to `./src/index.css` file and edit in the `:root`
 4. If you want to change Primary and Secondary color, go to `theme.js` file and edit the color codes for `primary` and `secondary`
 5. If you want to change the Title, you can go to `./store/reducers/settingsReducer.js` and edit `title`
 6. Finally, you can run any of the below command as per your need.
+
+### `npm start`
+
+This will open a development server in PORT:3000. You can then access the app at http://localhost:3000
 
 ### `npm run build`
 
@@ -34,3 +38,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Collaboration
+Contributions are welcome! If you would like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository and create a new branch.
+2. Make your changes and ensure that the code passes all tests.
+3. Submit a pull request with a clear description of your changes.
+Thank you for considering contributing to React-To-Do-List!

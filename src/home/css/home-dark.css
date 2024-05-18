@@ -1,6 +1,6 @@
 body {
-	background-color: var(--light)!important;
-	color: var(--dark);
+	background-color: var(--dark)!important;
+	color: var(--white);
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -9,15 +9,31 @@ body {
 	justify-content: center;
 }
 .home {
-    background-color: var(--white);
+    background-color: var(--black);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-light-lg);
     width: clamp(300px, 100%, 500px);
     form {
         display: flex;
         justify-content: space-between;
+        .MuiFormControl-root {
+            label {
+                color: var(--white);
+            }
+        }
+        input {
+            color: var(--white);
+            border: 1px solid var(--dark);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: var(--shadow-light-sm);
+            &:focus {
+                outline: none;
+            }
+        
+        }
     }
     .empty {
         margin-top: .5rem;
@@ -38,8 +54,11 @@ body {
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
-            box-shadow: var(--shadow-sm);
-            background-color: var(--white);
+            box-shadow: var(--shadow-light-sm);
+            background-color: var(--black);
+            .dark {
+                color: var(--white);
+            }
             p {
                 &.done {
                     text-decoration: line-through;
@@ -59,12 +78,18 @@ body {
             padding: 0;
             margin: 0;
             list-style: none;
+            li {
+                button {
+                    color: var(--dark);
+                }
+            }
         }
         p.last {
             background-color: var(--light);
             padding: .5rem;
             border-radius: 0 0 5px 5px;
             width: 100%;
+            background-color: var(--dark);
         }
     }
 }

@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import listReducer from "./reducers/listReducer";
+import settingsReducer from "./reducers/settingsReducer";
 
 const store = configureStore({
     reducer: {
-        list: listReducer
+        list: listReducer,
+        settings: settingsReducer,
     }
 })
 

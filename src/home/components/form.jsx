@@ -13,8 +13,12 @@ const FormComponent = () => {
     const handleChange = (e) => setText(e.target.value);
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch({ type: 'ADD_TODO', text });
+        if (loading) return;
+        setLoading(true);
+        if (text === '') return setLoading(false);
+        dispatch({ type: 'ADD_TODO', payload: {text, done: false} });
         setText('');
+        setLoading(false);
     };
     
     return (

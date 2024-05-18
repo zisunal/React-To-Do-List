@@ -5,7 +5,7 @@
 3. If you want to change Light, Dark, White, Black color, or Shadows, go to `./src/index.css` file and edit in the `:root`
 4. If you want to change Primary and Secondary color, go to `theme.js` file and edit the color codes for `primary` and `secondary`
 5. If you want to change the Title, you can go to `./store/reducers/settingsReducer.js` and edit `title`
-6. Finally, you can run any of the below command as per your need.
+6. Finally, you can run any of the below commands as per your need.
 
 ### `npm start`
 
